@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+<div class="bg-image d-flex flex-column" style="
+      background-image: url('https://www.scb.co.th/content/dam/scb/personal-banking/stories-tips/house-construction-team/house-construction-team.jpg');
+      height: 100vh;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Build Together</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Volunteers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Mission</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <div class="container">
+        <div class="card opacity-75">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-start-date">Start Date</label>
+                            <input type="date" class="form-control" id="new-start-date">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-end-date">End Date</label>
+                            <input type="date" class="form-control" id="new-end-date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-vfn">Volunteer First Name</label>
+                            <input type="text" class="form-control" id="new-vfn" placeholder="Volunteer First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-vln">Volunteer Last Name</label>
+                        <input type="text" class="form-control" id="new-vln" placeholder="Volunteer Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-site">Site</label>
+                        <input type="text" class="form-control" id="new-site" placeholder="Site">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-duty">Duty</label>
+                        <input type="text" class="form-control" id="new-duty" placeholder="Duty">
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div>
+                    <button id="add" class="btn-success from-control">Create</button>
+                </div>
+        <div class="container">
+            <table id="list" class="table table-success table-striped">
+            <tr>
+                <th>Volunteer First Name</th>
+                <th>Volunteer Last Name</th>
+                <th>Volunteer Start Date</th>
+                <th>Volunteer End Date</th>
+                <th>Site</th>
+                <th>Duty</th>
+                <th>Actions</th>
+             </tr>
+            </table>
+        </div>
+    </div>
+  </div>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Volunteers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Links</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-vfn">Volunteer First Name</label>
+                        <input type="text" class="form-control" id="new-vfn" placeholder="Volunteer First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-vln">Volunteer Last Name</label>
+                    <input type="text" class="form-control" id="new-vln" placeholder="Volunteer Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="new-site">Site</label>
+                    <input type="text" class="form-control" id="new-site" placeholder="Site">
+                </div>
+                <div class="form-group">
+                    <label for="new-duty">Duty</label>
+                    <input type="text" class="form-control" id="new-duty" placeholder="Duty">
+                </div>
+            </div>
+        </div>
+    </div>
+                <div>
+                <button id="add" class="btn-success from-control">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-success table-striped">
+        <tr>
+            <th>Volunteer First Name</th>
+            <th>Volunteer Last Name</th>
+            <th>Volunteer Start Date</th>
+            <th>Volunteer End Date</th>
+            <th>Site</th>
+            <th>Duty</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+</div> -->
+
+    <script src="FET4Assignment.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
